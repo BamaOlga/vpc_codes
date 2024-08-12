@@ -6,7 +6,7 @@ resource "aws_instance" "public-server" {
     instance_type = "t2.micro"
     subnet_id = aws_subnet.public.id
     security_groups = [aws_security_group.kazi-sg.id]
-    key_name = "US-WEST-1-KEY"
+    key_name = "desamist"
 
     tags = {
       Name ="public-server"
@@ -22,7 +22,7 @@ resource "aws_instance" "private-server" {
     instance_type = "t2.micro"
     subnet_id = aws_subnet.private.id
     security_groups = [aws_security_group.kazi-sg.id]
-    key_name = "US-WEST-1-KEY"
+    key_name = "desamist"
 
     tags = {
       Name ="private-server"
