@@ -2,5 +2,5 @@
 //creating aws provider
 
 provider "aws" {
-  region = "us-west-1"
+  region = "us-east-1"
 }
