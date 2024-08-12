@@ -17,6 +17,20 @@ ingress {
   cidr_blocks = ["0.0.0.0/0"] # Allow SSH from anywhere
 }
 
+ingress {
+  from_port   = 9090
+  to_port     = 9090
+  protocol    = "tcp"       # HTTP protocol is TCP
+  cidr_blocks = ["0.0.0.0/0"] # Allow HTTP from anywhere
+}
+
+ingress {
+  from_port   = 8080
+  to_port     = 8080
+  protocol    = "tcp"       # HTTP protocol is TCP
+  cidr_blocks = ["0.0.0.0/0"] # Allow HTTP from anywhere
+}
+
 
 # Egress rules (outgoing traffic)
   egress {
