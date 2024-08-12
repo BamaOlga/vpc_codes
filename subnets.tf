@@ -4,7 +4,7 @@
 resource "aws_subnet" "public" {
   vpc_id = aws_vpc.Kazi.id
   cidr_block = "44.32.1.0/24"
-  availability_zone = "us-west-1a"
+  availability_zone = "us-east-1a"
   map_public_ip_on_launch = true
 
   tags = {
@@ -18,7 +18,7 @@ resource "aws_subnet" "public" {
 resource "aws_subnet" "private" {
   vpc_id = aws_vpc.Kazi.id
   cidr_block = "44.32.2.0/24"
-  availability_zone = "us-west-1c"
+  availability_zone = "us-east-1c"
 
   tags = {
     Name = "private"
